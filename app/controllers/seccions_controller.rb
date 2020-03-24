@@ -1,0 +1,2 @@
+class SeccionsController < ApplicationController
+end

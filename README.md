@@ -1,24 +1,6 @@
-# README
+# API de la Constitucion Nacional del Paraguay del 1992
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Diagrama Entidad Relacion
+[Link Lucid Chart](https://www.lucidchart.com/invitations/accept/1f19a3c8-b81c-4ce5-aade-8619e5775a92)
