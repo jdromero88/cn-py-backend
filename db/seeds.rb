@@ -5,4 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-uno = Parte.create(numero:1, titulo:"DERECHOS")
+parteUno = Parte.create(numero:1, titulo:"DE LAS DECLARACIONES FUNDAMENTALES,
+DE LOS DERECHOS, DE LOS DEBERES Y DE LAS GARANTÍAS")
+parteDos = Parte.create(numero:2, titulo:"DEL ORDENAMIENTO POLÍTICO DE LA REPÚBLICA")
