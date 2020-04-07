@@ -1,6 +1,11 @@
 class PartesController < ApplicationController
   def index
-      @Parte = Parte.all
-      render json: @Parte
+    @partes = Parte.all
+    render json: @partes
+  end
+
+  def show
+    @parte = Parte.find params[:id]
+    render json: @parte
   end
 end
