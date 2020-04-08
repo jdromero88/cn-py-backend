@@ -16,7 +16,15 @@ class TitulosController < ApplicationController
   def update
     @titulo = Titulo.find params[:id]
     # do something here to update
-    render json: @titulo
+    if @titulo
+      @titulo.update! titulo_strong_params
+      render json: @titulo
+    else
+      render json: {
+        error:true,
+        message:'Something went wrong.',
+      }
+    end
   end
 
   def destroy
@@ -31,8 +39,17 @@ class TitulosController < ApplicationController
     else
       render json:{
         error:true,
-        message:'Something went wrong.'
+        message:'Something went wrong.',
       }
     end
   end
+
+  private
+    def titulo_strong_params
+      params.require(:titulo).permit(
+        :numero,
+        :titulo,
+        :partes => []
+      )
+    end
 end
